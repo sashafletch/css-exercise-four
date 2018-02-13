@@ -1,4 +1,90 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
+  background-color: #DBD9DB;
+  font-family: system-ui, sans-serif;
   font-size: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 575px;
+}
+
+/*headings*/
+
+.container h1 {
+  font-size: 150%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 20px 0 10px 0;
+}
+
+.preview h1 {
+  font-weight: 500;
+  font-size: 200%;
+  text-align: left;
+  padding: 50px 0 0 40px;
+  position: absolute;
+}
+
+/*images*/
+
+.preview {
+  display: block;
+  margin: 20px auto;
+  height: 340px;
+  width: 500px;
+  z-index: -1;
+}
+
+.baku {
+  background-image: url(../images/baku.jpg);
+  background-size: cover;
+}
+
+.london {
+  background-image: url(../images/london.png);
+  background-size: cover;
+}
+
+.madrid {
+  background-image: url(../images/madrid.jpg);
+  background-size: cover;
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+  background-size: cover;
+}
+
+/*tablet devices*/
+@media screen and (min-width: 575px) {
+  .preview {
+    display: inline-block;
+    margin: 5px;
+    height: 175px;
+    width: 250px;
+  }
+  .preview h1 {
+    font-size: 150%;
+    padding: 25px 0 0 20px;
+  }
+}
+
+/*laptops*/
+@media screen and (min-width: 991px) {
+  .preview {
+    display: inline-block;
+    margin: 3px;
+    height: 87px;
+    width: 125px;
+  }
+  .preview h1 {
+    font-size: 100%;
+    padding: 15px 0 0 10px;
+  }
 }
